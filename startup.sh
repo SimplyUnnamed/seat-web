@@ -32,7 +32,7 @@ if [ ! "$plugins" == "" ]; then
 
   composer update ${plugins} --no-scripts --no-dev --no-ansi --no-progress
 
-  php artisan vendor::publish --force --all
+  php artisan vendor:publish --force --all
 
   php artisan migrate
 
